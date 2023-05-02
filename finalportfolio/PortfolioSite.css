@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'tf2build';
+    src: url('https://onepunchmanatee.github.io/CTK301/assign10folder/tf2build.woff2') format('woff2');
+    src: url('https://onepunchmanatee.github.io/CTK301/assign10folder/tf2build.woff') format('woff');
+    src: url('tf2build-webfont.woff2') format('woff2');
+    src: url('tf2build-webfont.woff') format('woff');
+    font-family: 'tf2secondary';
+    src: url('https://onepunchmanatee.github.io/CTK301/assign10folder/tf2secondary-webfont.woff2') format('woff2'),
+         url('https://onepunchmanatee.github.io/CTK301/assign10folder/PortfolioSite.woff') format('woff');
+    src: url('tf2secondary-webfont.woff2') format('woff2'),
+         url('tf2secondary-webfont.woff') format('woff');
+    
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-color: darkgray;
+  grid-column: span 12;
+}
+
+main {
+  grid-column: span 12;
+  background-color:#bcb3a9;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+}
+
+#mainport {
+  background-color: lightgray;
+}
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  border: 1px solid black;
+  padding: 24px;
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+  border-radius: 20px;
+}
+
+#wrapper2 {
+  margin: 24px auto;
+  width: 1200px;
+  border: 1px solid black;
+  padding: 24px;
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 24px;
+  border-radius: 20px;
+}
+
+header {
+  margin: 0 auto;
+  grid-column: span 12;
+  position: relative;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  padding-left: 1000px;
+  color: green;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 2.5em;
+}
+
+footer {
+  grid-column: span 12;
+  border-top: 1px solid black;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.sobre {
+  grid-column: span 4;
+  float: left;
+  padding-right: 150px;
+}
+
+#fanciful {
+  grid-column: span 1;
+}
+
+#fanciful img {
+  width: 45%;
+  border-radius: 5px;
+}
+
+#fancifulacpt {
+  grid-column: span 1;
+}
+
+#fancifulacpt img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+#resize {
+  display: inline-block;
+  height: 304px;
+}
+
+p {
+  font-family: malaga, serif;
+  font-family: 'tf2build';
+  font-weight: 400;
+  font-style: normal;
+}
+
+#center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+body {
+  background-image: url(wall.jpg);
+}
+
+nav {
+font-family: 'tf2secondary';
+  grid-column: span 12;
+}
+
+nav ul{
+  list-style-type: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  border: 1px solid darkgray;
+  border-bottom: 0px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: orange;
+  font-weight: bold;
+  box-shadow: 10px 10px 10px #666;
+  transition: background-color 1s;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+a:visited{
+  color: black;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+nav li:hover{
+  text-decoration: none;
+  background-color: darkorange;
+}
+
+
+.bi {
+  font-size: 30px;
+  top: 20px;
+}
+
+.bi:link, .bi:visited {
+  color: #9654D8;
+  text-shadow: 4px 4px 4px black;
+}
+
+.bi-steam {
+  position: absolute;
+  top: 16px;
+  right: 263px;
+}
+
+.bi-discord {
+  position: absolute;
+  top: 16px;
+  right: 223px;
+}
+
+@keyframes modulate {
+  0% {width: 90%;}
+  25% {width: 110%}
+  50% {width: 95%}
+  75% {width: 105%}
+  100% {width: 100%}
+}
+
+#stomp {
+  animation-name: modulate;
+  animation-duration: .75s;
+  animation-fill-mode: forwards;
+}
+
+#reigen {
+  border-radius: 2000px;
+  margin: 24px;
+  width: 600px;
+  display: block;
+  grid-column: span 6;
+}
+
+#shovelstats {
+  height: 830px;
+  margin-top: 30px;
+  margin-right: 24px;
+  border: 4px solid darkorange;
+  float: right;
+}
+
+#blurb {
+  grid-column: span 4;
+  text-align: center;
+  padding-bottom: 40px;
+  margin-left: 48px;
+  width: 550px;
+}
+
+.image {
+    filter: drop-shadow(0.25rem 0.25rem 0.5rem #000000);
+    margin-left: 10px;
+}
+
+.videotitles{
+color: #363636;
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+}
