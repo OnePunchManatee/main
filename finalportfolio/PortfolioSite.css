@@ -40,12 +40,20 @@
   --carousel-slide-width: 24%;
   margin: 0;
   padding: 0;
+  display: block;
+}
+
+iframe {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin-left: 1.5rem;
 }
 
 .carousel.carousel__slide {
-  display: flex;
-  width: 20%;
-  height: 300px;
+  display: block;
+  width: 100%;
+  height: auto;
   align-items: center;
   justify-content: center;
   border-radius: 6px;
@@ -154,8 +162,16 @@ footer {
 }
 
 #fancifulacpt img{
-    width: 100%;
-    border-radius: 5px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+h6 {
+  font-family: 'tf2build', serif;
+  font-weight: 200;
+  font-size: .9rem;
+  text-align: center;
+  font-style: normal;
 }
 
 p {
@@ -282,24 +298,26 @@ nav li:hover{
 }
 
 .image {
-    filter: drop-shadow(0.25rem 0.25rem 0.5rem #000000);
-    margin-left: 10px;
+  filter: drop-shadow(0.25rem 0.25rem 0.5rem #000000);
+  margin-left: 10px;
 }
 
 .videotitles{
-color: #363636;
-    margin: 0;
-    padding: 0;
-    margin-left: 15px;
-}
-
-.hidevideo {
-  display: none
+  color: #363636;
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
 }
 
 @media all and (min-width: 55rem){
-  .hidevideo {
+  h6 {
+    font-size: 1.2rem;
+  }
+  iframe {
     display: inline;
+    width: 23%;
+    height: 13rem;
+    margin-left: .5rem;
   }
   nav li {
     border-bottom: 5px;
@@ -318,6 +336,9 @@ color: #363636;
 }
 
 @media all and (min-width: 70rem){
+  iframe {
+    width: 22%;
+  }
   #fanciful img{
     display: inline-block;
     margin-bottom: 0px;
@@ -351,6 +372,9 @@ color: #363636;
 }
 
 @media all and (min-width: 95rem){
+  iframe {
+    width: 23%;
+  }
   .bi-steam {
     right: 5%;
     top: 20%
