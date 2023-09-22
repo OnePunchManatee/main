@@ -15,9 +15,64 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'tf2secondary';
+  src: url('https://onepunchmanatee.github.io/CTK301/assign10folder/PortfolioSite.woff2') format('woff2'),
+       url('https://onepunchmanatee.github.io/CTK301/assign10folder/PortfolioSite.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'tf2build';
+  src: url('https://onepunchmanatee.github.io/CTK301/assign10folder/tf2build.woff2') format('woff2');
+  src: url('https://onepunchmanatee.github.io/CTK301/assign10folder/tf2build.woff') format('woff');
+  src: url('tf2build-webfont.woff2') format('woff2');
+  src: url('tf2build-webfont.woff') format('woff');
+}
+
+
+.carousel {
+  color: #170724;
+  --carousel-button-bg: #fff;
+  --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0
+          0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+  --carousel-button-svg-width: 20px;
+  --carousel-button-svg-height: 20px;
+  --carousel-button-svg-stroke-width: 2.5;
+  --carousel-slide-width: 24%;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel.carousel__slide {
+  display: flex;
+  width: 20%;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slideshow a {
+    margin: 10px;
+  }
+  
+  .slideshow a img {
+    max-width: 10%;
+    height: auto;
+  }
+
 body {
   background-color: darkgray;
   grid-column: span 12;
+  background-image: url(wall.jpg);
 }
 
 main {
@@ -33,7 +88,7 @@ main {
 
 #wrapper {
   margin: 24px auto;
-  width: 1200px;
+  width: 90%;
   border: 1px solid black;
   padding: 24px;
   background-color: lightgray;
@@ -45,12 +100,12 @@ main {
 
 #wrapper2 {
   margin: 24px auto;
-  width: 1200px;
+  width: 90%;
   border: 1px solid black;
   padding: 24px;
   background-color: lightgray;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 24px;
   border-radius: 20px;
 }
@@ -79,17 +134,19 @@ footer {
 
 .sobre {
   grid-column: span 4;
-  float: left;
-  padding-right: 150px;
 }
 
 #fanciful {
   grid-column: span 1;
+  padding: 0px;
+  margin: 0px;
 }
 
 #fanciful img {
-  width: 45%;
+  width: 100%;
   border-radius: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 #fancifulacpt {
@@ -101,15 +158,8 @@ footer {
     border-radius: 5px;
 }
 
-
-#resize {
-  display: inline-block;
-  height: 304px;
-}
-
 p {
-  font-family: malaga, serif;
-  font-family: 'tf2build';
+  font-family: 'tf2secondary', serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -121,12 +171,8 @@ p {
   width: 20%;
 }
 
-body {
-  background-image: url(wall.jpg);
-}
-
 nav {
-font-family: 'tf2secondary';
+  font-family: 'tf2secondary';
   grid-column: span 12;
 }
 
@@ -143,7 +189,7 @@ nav li {
   width: 100px;
   border: 1px solid darkgray;
   border-bottom: 0px;
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 15px 15px 15px 15px;
   background-color: orange;
   font-weight: bold;
   box-shadow: 10px 10px 10px #666;
@@ -152,7 +198,6 @@ nav li {
 
 nav a{
   text-decoration: none;
-  color: black;
   display: block;
   padding-right: 15px;
   padding-left: 15px;
@@ -176,8 +221,7 @@ nav li:hover{
 
 
 .bi {
-  font-size: 30px;
-  top: 20px;
+  font-size: 2rem;
 }
 
 .bi:link, .bi:visited {
@@ -187,14 +231,14 @@ nav li:hover{
 
 .bi-steam {
   position: absolute;
-  top: 16px;
-  right: 263px;
+  top: 15%;
+  right: 3%;
 }
 
 .bi-discord {
   position: absolute;
-  top: 16px;
-  right: 223px;
+  top: 15%;
+  right: 12%;
 }
 
 @keyframes modulate {
@@ -206,21 +250,21 @@ nav li:hover{
 }
 
 #stomp {
-  animation-name: modulate;
-  animation-duration: .75s;
-  animation-fill-mode: forwards;
+  width: 100%;
+  animation: modulate .7s ease;
 }
 
 #reigen {
   border-radius: 2000px;
   margin: 24px;
-  width: 600px;
+  width: 85%;
   display: block;
   grid-column: span 6;
 }
 
 #shovelstats {
-  height: 830px;
+  display: none;
+  width: 0px;
   margin-top: 30px;
   margin-right: 24px;
   border: 4px solid darkorange;
@@ -232,7 +276,9 @@ nav li:hover{
   text-align: center;
   padding-bottom: 40px;
   margin-left: 48px;
-  width: 550px;
+  width: 85%;
+  font-size: 1.6rem;
+  font-family: 'tf2secondary';
 }
 
 .image {
@@ -245,4 +291,79 @@ color: #363636;
     margin: 0;
     padding: 0;
     margin-left: 15px;
+}
+
+.hidevideo {
+  display: none
+}
+
+@media all and (min-width: 55rem){
+  .hidevideo {
+    display: inline;
+  }
+  nav li {
+    border-bottom: 5px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  body {
+    background-size: contain;
+  }
+  .bi-steam {
+    right: 5%;
+  }
+  
+  .bi-discord {
+    right: 10%;
+  }
+}
+
+@media all and (min-width: 70rem){
+  #fanciful img{
+    display: inline-block;
+    margin-bottom: 0px;
+    width:49%;
+  }
+  .bi {
+    font-size: 3.5rem;
+  }
+  .bi-steam {
+    right: 5%;
+  }
+  
+  .bi-discord {
+    right: 13%;
+  }
+  #reigen {
+    width: 50%
+  }
+  #shovelstats {
+    width: 40%;
+    display: inline-block;
+  }
+  #blurb {
+    width: 50%;
+  }
+  .sobre {
+    float: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media all and (min-width: 95rem){
+  .bi-steam {
+    right: 5%;
+    top: 20%
+  }
+  
+  .bi-discord {
+    right: 10%;
+    top: 20%
+  }
+  #wrapper2 {
+    width: 80%;
+  }
+  #wrapper {
+    width: 80%
+  }
 }
