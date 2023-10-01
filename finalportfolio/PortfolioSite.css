@@ -28,6 +28,17 @@
   src: url('tf2build-webfont.woff') format('woff');
 }
 
+#mangawrapper{
+  margin: 24px auto;
+  width: 90%;
+  border: 1px solid black;
+  padding: 24px;
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 24px;
+  border-radius: 20px;
+}
 
 .carousel {
   color: #170724;
@@ -148,12 +159,15 @@ footer {
   grid-column: span 1;
   padding: 0px;
   margin: 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #fanciful img {
   width: 100%;
   border-radius: 5px;
-  display: block;
+  display: inline-block;
   margin-bottom: 5px;
 }
 
@@ -368,6 +382,9 @@ nav li:hover{
     float: left;
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+  #mangawrapper {
+    width: 60rem;
   }
 }
 
