@@ -273,9 +273,9 @@ nav li:hover{
 
 @keyframes modulate {
   0% {width: 90%;}
-  25% {width: 110%}
-  50% {width: 95%}
-  75% {width: 105%}
+  35% {width: 110%}
+  65% {width: 95%}
+  80% {width: 103%}
   100% {width: 100%}
 }
 
